@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../images/siteimage.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.navbar h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  display: none;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 15px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #0fffef;
+  transform: translateY(-5px);
+}
+
+
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-menu.open {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-toggler-icon{
+    background-image: none;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+}
+
+.section {
+  padding: 0% 10px 0% 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.about,
+.courses,
+.contact,
+.team {
+  background-color: #000;
+  color: white;
+}
+
+
+@media(min-width: 769px)
+{
+  .section{
+    height: 100vh;
+  }
+}
+
+@media(max-width: 768px)
+{
+  .home{
+    height: 100vh;
+  }
+  .navbar-home {
+  background-color: transparent !important;
+}
+
+.navbar-solid {
+  background-color: #000;
+}
+}
+
+button.loader[disabled]{
+  background-color: #515e54;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+button.loader[disabled]:active{
+    background-color: #515e54;
+}

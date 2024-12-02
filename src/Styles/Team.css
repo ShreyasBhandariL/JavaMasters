@@ -1,0 +1,82 @@
+.team-card {
+  background-color: #1d1d1d;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+}
+
+.team-card:hover {
+  animation: popAndDance 2.5s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(199, 199, 135, 0.7), 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.card-body {
+  color: white;
+}
+
+.team-text{
+  text-align: center;
+  font-size: large;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+@keyframes popAndDance {
+  0% {
+    transform: scale(1) translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) translate(5px, -5px) rotate(3deg);
+  }
+  50% {
+    transform: scale(1.1) translate(-5px, 5px) rotate(-3deg);
+  }
+  75% {
+    transform: scale(1.05) translate(5px, 5px) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) translate(0, 0) rotate(0deg);
+  }
+}
+
+
+.image-overlay-container {
+  position: relative;
+}
+
+.image-overlay-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.244); /* Adjust the color and opacity as needed */
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.image-overlay-container:hover .overlay {
+  opacity: 0;
+}
+
+.team-card .card-img-top {
+  border-radius: 10px;
+}
+
+
+@media(max-width:768px){
+  .team-col{
+    margin-bottom: 20px;
+  }
+
+  .team-text{
+    width: 90%;
+    text-align: justify;
+  }
+  .row{
+    padding-top: 0 !important;
+  }
+}

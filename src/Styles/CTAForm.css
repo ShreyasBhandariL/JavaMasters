@@ -1,0 +1,76 @@
+.cta-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1000;
+  animation: bounce 1.9s infinite;
+}
+
+.cta-button:hover {
+  animation: pop 1.5s infinite ease-in-out;
+}
+
+
+.modal-content {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9); /* Black with slight transparency */
+  border: 2px solid white;
+  color: white;
+  max-width: 600px; /* Limit the width */
+  margin: auto;
+}
+
+.modal-body, .modal-header, .modal-footer {
+  background-color: black;
+  color: white;
+}
+
+.modal-body{
+  border-radius: 10px;
+}
+.modal-body input::placeholder,
+.modal-body textarea::placeholder {
+  color: rgba(181, 181, 181, 0.684); 
+  opacity: 1;
+}
+
+
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

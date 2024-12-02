@@ -1,0 +1,40 @@
+/* Footer styles */
+.footer-container {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+}
+
+.footer-left p, .footer-center p, .footer-right a {
+  margin: 0;
+}
+
+.footer-link {
+  color: #0fffef;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #0affef;
+}
+
+.footer-center p {
+  font-style: italic;
+}

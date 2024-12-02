@@ -1,0 +1,145 @@
+
+
+.feedback-page-container {
+  padding: 20px;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: #fff;
+}
+
+/* Feedback Testimonials Section */
+.feedback-testimonials {
+  margin-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  overflow: hidden; 
+  width: 40%;  
+}
+
+.carousel-class {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 30px;
+  animation: slide 15s linear infinite;
+}
+
+.testimonial {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+.testimonial h4 {
+  text-align: right;
+}
+
+/* No Feedback Message */
+.no-feedback-message {
+  background-color: #444;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.no-feedback-message h2 {
+  font-size: 2rem;
+  color: #0fffef;
+}
+
+.no-feedback-message p {
+  font-size: 1.2rem;
+}
+
+/* Feedback Form Section */
+.feedback-form-container {
+  background-color: #000000;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+
+.feedback-form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  border: 2px solid white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button.submit-btn {
+  background-color:#0fffef;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #00e3d4;
+}
+
+
+@media (max-width: 768px){
+  .feedback-page-container{
+    flex-direction: column;
+  }
+  .feedback-form-container{
+    width: 100%;
+  }
+  .feedback-form-container h2{
+    padding-top: 25px;
+  }
+  .feedback-testimonials{
+    width: 100%;
+  }
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Slide to the left */
+  }
+}

@@ -1,0 +1,106 @@
+
+.about_java img {
+  max-width: 100%;
+  height: auto;
+  animation: dance 2s infinite ease-in-out;
+  border-radius: 10px;
+}
+
+.about {
+  box-sizing: border-box;
+  height: auto;
+  padding: 3rem;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  padding-top: 3rem;
+}
+
+.about_java .card {
+  background-color: rgba(0, 0, 0, 0.281);
+  color: white;
+  border-radius: 5px;
+}
+
+.about_java .card_outer {
+  box-shadow: 5px 5px 10px #545454, -5px -5px 10px #73737396;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about_java .card_outer:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px #545454, -10px -10px 20px #73737396;
+}
+
+.about_java .card_inner {
+  border-radius: 5px;
+}
+
+.carousel-control-prev-icon {
+  filter: invert(1%); /* Change color (e.g., white) */
+  width: 0px; /* Adjust icon size */
+  height: 20px;
+  margin-right: 60px;
+}
+
+.carousel-control-next-icon {
+  filter: invert(1%); /* Change color (e.g., white) */
+  width: 0px; /* Adjust icon size */
+  height: 20px;
+  margin-left: 60px;
+}
+
+
+.about_java .carousel-indicators{
+    display: none;
+}
+
+.cta-btn {
+  background-color: #545454;
+  border-radius: 10px;
+  color: white;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about_java {
+    flex-direction: column; /* Stacks content vertically only on smaller screens */
+    align-items: center;
+
+  }
+  
+  .about .light{
+    display: none;
+  }
+
+  .about_java img {
+    margin-bottom: -10px;
+  }
+
+  .about-description {
+    padding-top: 0;
+    text-align: justify;
+  }
+
+  .about-text-description{
+    width: 130%;
+  }
+
+  .about{
+    padding: 3rem 3rem 0% 3rem;
+  }
+
+}
