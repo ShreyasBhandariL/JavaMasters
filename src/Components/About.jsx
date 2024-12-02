@@ -8,7 +8,7 @@ import image from "../images/Programming.png";
 const About = () => {
   return (
     <div className="about">
-      <h2 className="text-center heading">
+      <h2 className="text-center pt-4 heading">
         About The Java Master's<div className="light"></div>
       </h2>
       <div className="about_java d-flex">
@@ -36,7 +36,7 @@ const About = () => {
           <Carousel className="card_outer">
             <Carousel.Item className="card_inner">
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>Experienced Faculty:</strong>
                   <br />
                   Our instructors are industry veterans with deep expertise in
@@ -46,7 +46,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>In-Depth Java Training:</strong>
                   <br />
                   We start with the basics and guide students through advanced
@@ -56,7 +56,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>
                     Building Confidence and Problem-Solving Skills:
                   </strong>
@@ -68,7 +68,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>LinkedIn Profile Building:</strong>
                   <br />
                   Crafting a strong digital presence is crucial, and we guide
@@ -78,7 +78,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>Canva & Presentation Skills:</strong>
                   <br />
                   We teach students to create compelling visuals on Canva and
@@ -88,7 +88,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>Comprehensive MERN Stack Training:</strong>
                   <br />
                   From MongoDB to Node.js, we dive deep into full-stack
@@ -98,7 +98,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>Flexible Training Programs:</strong>
                   <br />
                   Whether it’s on-site or online, we adapt to your schedule!
@@ -107,7 +107,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>Certification and Professional Recognition:</strong>
                   <br />
                   Students receive a certificate of achievement upon completion.
@@ -116,7 +116,7 @@ const About = () => {
             </Carousel.Item>
             <Carousel.Item>
               <div className="card p-3">
-                <p className="text-center">
+                <p className="text-center about-text">
                   <strong>Satisfaction Guarantee:</strong>
                   <br />
                   Our training is backed by a satisfaction guarantee.

@@ -81,7 +81,7 @@ function CTAForm() {
         }}
         centered
       >
-        <Modal.Header closeButton>
+        <Modal.Header closeButton closeVariant="white">
           <Modal.Title>Request Form</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modal-body">

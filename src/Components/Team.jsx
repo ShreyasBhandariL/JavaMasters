@@ -35,8 +35,8 @@ function Team() {
   ];
 
   return (
-    <Container>
-      <h2 className="text-center pb-5 heading">
+    <Container className="pt-5">
+      <h2 className="text-center pt-3 pb-5 heading">
         Meet Our Team<div className="light"></div>
       </h2>
       <p className="team-text">

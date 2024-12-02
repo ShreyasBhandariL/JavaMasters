@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/FeedBackPage.css"; // Include a CSS file for custom styles
+import { Carousel } from "react-bootstrap";
+import "../Styles/FeedBackPage.css"; 
 
 function FeedbackPage() {
   const [formData, setFormData] = useState({
@@ -68,30 +69,37 @@ function FeedbackPage() {
 
   return (
     <div className="feedback pt-5">
-      <h2 className="text-center heading">
+      <h2 className="text-center pt-4 heading">
         Feedback Form<div className="light"></div>
       </h2>
       <div className="feedback-page-container d-flex pt-5">
         <div className="feedback-testimonials">
-          <h3>What Others Are Saying</h3>
-          <div className="carousel-class">
+          <h3 className="pb-4">What Others Are Saying 🤔</h3>
+          <Carousel className="card_outer">
             {feedbackList.length === 0 ? (
-              <div className="no-feedback-message">
-                <h2>🌟 This could be the most beautiful feedback ever! 🌟</h2>
-                <p>
-                  We would love to hear your thoughts and experiences. Your
-                  feedback can help us grow!
-                </p>
-              </div>
+              <Carousel.Item className="card_inner">
+                <div className="card p-3 no-feedback-message">
+                  <h2>🌟 This could be the most beautiful feedback ever! 🌟</h2>
+                  <p>
+                    We would love to hear your thoughts and experiences. Your
+                    feedback can help us grow!
+                  </p>
+                </div>
+              </Carousel.Item>
             ) : (
               feedbackList.map((item, index) => (
-                <div key={index} className="testimonial">
-                  <p>"{item.feedback}"</p>
-                  <h4>- {item.name}</h4>
-                </div>
+                <Carousel.Item
+                  key={index}
+                  className="card_inner"
+                >
+                  <div className="card p-3">
+                    <p className="text-center feedback-text pb-3"><i>"{item.feedback}"</i></p>
+                    <h6 className="text-center">- {item.Name}</h6>
+                  </div>
+                </Carousel.Item>
               ))
             )}
-          </div>
+          </Carousel>
         </div>
 
         <div className="feedback-form-container">
@@ -145,7 +153,11 @@ function FeedbackPage() {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn loader" disabled={loader}>
+            <button
+              type="submit"
+              className="submit-btn loader"
+              disabled={loader}
+            >
               {loader ? "Submiting.." : "Submit"}
             </button>
           </form>

@@ -60,7 +60,7 @@ const Programs = () => {
 
   return (
     <Container fluid className="programs-section">
-      <h2 className="text-center text-light heading">
+      <h2 className="text-center text-light pt-4 heading">
         Courses/Programs<div class="light"></div>
       </h2>
 

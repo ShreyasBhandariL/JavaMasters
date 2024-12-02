@@ -16,7 +16,8 @@ h2, h3, h4 {
   align-items: center;
   margin:auto;
   overflow: hidden; 
-  width: 40%;  
+  width: 40%; 
+  padding: 10px; 
 }
 
 .carousel-class {
@@ -134,6 +135,35 @@ button.submit-btn:hover {
   }
 }
 
+.feedback-testimonials .card{
+  background-color: rgba(0, 0, 0, 0.281);
+  color: white;
+  border-radius: 5px;
+}
+
+.feedback-testimonials .card_outer {
+  box-shadow: 5px 5px 10px #545454, -5px -5px 10px #73737396;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feedback-testimonials .card_inner {
+  border-radius: 5px;
+}
+
+.feedback-testimonials .card_outer:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px #545454, -10px -10px 20px #73737396;
+}
+
+.feedback-testimonials .carousel-indicators{
+    display: none;
+}
+
+.feedback-text{
+  width: 95%;
+  margin: auto;
+}
 
 @keyframes slide {
   0% {
