@@ -152,6 +152,25 @@
   }
 }
 
+
+
+
+@media (max-width: 1270px){
+  .cards-container{
+  width: 110%;
+  display: flex;
+  overflow: hidden;
+}
+.cards-container .card {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: 250px;
+}
+.center-image {
+  display: none;
+}
+}
+
 @media (max-width: 768px){
   .cards-container{
     display: none;

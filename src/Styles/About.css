@@ -13,10 +13,10 @@
 }
 
 .about-description {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.6;
   text-align: justify;
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .about_java .card {
@@ -68,6 +68,7 @@
 .about-text{
   width: 95%;
   margin: auto;
+  font-size: 18px;
 }
 
 @keyframes dance {
@@ -82,7 +83,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .about_java {
-    flex-direction: column; /* Stacks content vertically only on smaller screens */
+    flex-direction: column; 
     align-items: center;
 
   }
@@ -100,12 +101,15 @@
     text-align: justify;
   }
 
-  .about-text-description{
-    width: 130%;
-  }
-
   .about{
     padding: 3rem 3rem 0% 3rem;
   }
 
+}
+
+@media (max-width: 510px)
+{
+    .about-text-description{
+    width: 130%;
+  }
 }
