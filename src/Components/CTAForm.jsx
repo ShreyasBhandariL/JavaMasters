@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import "../Styles/CTAForm.css";
 import { FaComments } from "react-icons/fa";
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 function CTAForm() {
   const [show, setShow] = useState(false);
@@ -26,7 +27,7 @@ function CTAForm() {
     e.preventDefault();
     try {
       setLoader(true);
-      const response = await fetch(`http://localhost:2000/requestForm`, {
+      const response = await fetch(`${backendUrl}/requestForm`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
