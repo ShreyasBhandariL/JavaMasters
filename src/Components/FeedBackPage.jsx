@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-bootstrap";
 import "../Styles/FeedBackPage.css"; 
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
 function FeedbackPage() {
   const [formData, setFormData] = useState({
@@ -15,7 +16,7 @@ function FeedbackPage() {
 
   const fetchFeedback = async () => {
     try {
-      const response = await fetch("http://localhost:2000/feedbackList");
+      const response = await fetch(`${backendUrl}/feedbackList`);
       if (response.ok) {
         const data = await response.json();
         setFeedbackList(data);
