@@ -39,7 +39,7 @@ function FeedbackPage() {
     e.preventDefault();
     try {
       setLoader(true);
-      const response = await fetch("http://localhost:2000/feedbackForm", {
+      const response = await fetch(`${backendUrl}/feedbackForm`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
