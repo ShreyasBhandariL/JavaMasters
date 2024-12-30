@@ -15,7 +15,7 @@ function FeedbackPage() {
 
   const fetchFeedback = async () => {
     try {
-      const response = await fetch("http://backend/api/feedbackList");
+      const response = await fetch("http://backend:2000/api/feedbackList");
       if (response.ok) {
         const data = await response.json();
         setFeedbackList(data);
@@ -38,7 +38,7 @@ function FeedbackPage() {
     e.preventDefault();
     try {
       setLoader(true);
-      const response = await fetch("http://backend/api/feedbackForm", {
+      const response = await fetch("http://backend:2000/api/feedbackForm", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
