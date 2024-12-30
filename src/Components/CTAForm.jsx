@@ -26,7 +26,7 @@ function CTAForm() {
     e.preventDefault();
     try {
       setLoader(true);
-      const response = await fetch(`http://backend:2000/api/requestForm`, {
+      const response = await fetch(`http://13.49.243.246/api/requestForm`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
