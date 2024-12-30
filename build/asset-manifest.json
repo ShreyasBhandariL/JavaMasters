@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e4404d10.css",
+    "main.js": "/static/js/main.f1fbd1c3.js",
+    "static/media/Canva.png": "/static/media/Canva.8a61e64230090e7bbd8c.png",
+    "static/media/mern.png": "/static/media/mern.0aadf5f2afe75dd36788.png",
+    "static/media/Java.png": "/static/media/Java.5b1b77cc15a0d6acedc5.png",
+    "static/media/yamin.jpg": "/static/media/yamin.e211c5a563d347ce3474.jpg",
+    "static/media/SoftSkills.png": "/static/media/SoftSkills.8e494778b64519beffce.png",
+    "static/media/SocialNetwork.png": "/static/media/SocialNetwork.e6f80e6a7d2576d54a55.png",
+    "static/media/Programming.png": "/static/media/Programming.78acbf3d8471e272caad.png",
+    "static/media/siteimage.jpg": "/static/media/siteimage.3b8c62e9c8806ca95375.jpg",
+    "static/media/prathiksha.jpg": "/static/media/prathiksha.2e96551fd30297f9300d.jpg",
+    "static/media/syed.jpg": "/static/media/syed.1470a7ad429eb167fd1f.jpg",
+    "static/media/logo2.png": "/static/media/logo2.5f96a9cd2db7e4b1ce12.png",
+    "static/media/logo1.png": "/static/media/logo1.2f219cd9a9e883bfc699.png",
+    "index.html": "/index.html",
+    "main.e4404d10.css.map": "/static/css/main.e4404d10.css.map",
+    "main.f1fbd1c3.js.map": "/static/js/main.f1fbd1c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4404d10.css",
+    "static/js/main.f1fbd1c3.js"
+  ]
+}
